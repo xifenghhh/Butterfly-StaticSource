@@ -136,4 +136,33 @@ span.page-number.current {
     background:url(https://ae01.alicdn.com/kf/H3342af90d24b4d62b9bbfec9688ccc25M.gif)
 }*/
 
-
+/*备案信息*/
+ .beian {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+ .beian > * {
+  flex: 1;
+  margin: 0 0.25rem;
+}
+ .beian > *:nth-last-child(2):first-child {
+  text-align: right;
+}
+ .beian > *:nth-last-child(2):first-child ~ * {
+  text-align: left;
+}
+ .beian-police {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+}
+ .beian-police img {
+  margin-right: 3px;
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: 0.1rem;
+}
